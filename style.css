@@ -1,0 +1,66 @@
+body {
+    background-color: blanchedalmond;
+    background-image: linear-gradient(to right, blanchedalmond, rgb(190, 255, 176) );
+    z-index: 0;
+}
+
+canvas {
+    border: 5px solid rgb(244, 247, 196);
+    border-radius: 10px;
+    display: block;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgb(39, 39, 39);
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#end-game {
+    display: none;
+    margin: 50px auto;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#restart-btn {
+    border: none;
+    background-color: bisque;
+    height: 40px;
+    margin-top: 10px;
+    color: rgb(0, 128, 21);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+}
+
+#restart-btn:hover{
+    background-color:rgb(255, 194, 120);
+    transform: translateY(-2px);
+}
+
+#score-display{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: black;
+}
+
+.score-area{
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.backdrop-blur{
+    z-index: 0;
+    filter: blur(5px);
+}
